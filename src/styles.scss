@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #D9D9D9;
+}
+
+.button-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  font-size: 60px;
+}
+
+.button {
+  border: 5px solid #FF0000;
+  border-radius: 20px;
+  font-size: 64px;
+  cursor: pointer;
+  padding: 25px 35px;
+  font-weight: bold;
+  transition: opacity 0.5s;
+  color: white;
+  background-color: #D9D9D9;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.score {
+  font-size: 60px;
+}
+
+.colorBoxes {
+  margin: 80px auto;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(3, 267px);
+  gap: 60px;
+}
+
+.colorBox {
+  width: 219px;
+  height: 267px;
+  margin: 5px;
+  display: flex;
+  border-radius: 20px;
+  border: solid;
+}
